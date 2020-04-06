@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Herculanum.ttf">
+            <string>Herculanum</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Calculator View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="nUC-sN-azD">
+                                <rect key="frame" x="20.666666666666657" y="36.666666666666686" width="372.66666666666674" height="662.66666666666652"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glN-7f-dLn">
+                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="0.0"/>
+                                        <color key="backgroundColor" name="ButtonColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="A73-a5-K7D">
+                                        <rect key="frame" x="0.0" y="43" width="372.66666666666669" height="619.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="gph-IZ-pmG">
+                                                <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="122.66666666666667"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKJ-vc-KKJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sevenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="er3-GC-hau"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igt-Of-laq">
+                                                        <rect key="frame" x="138.66666666666669" y="0.0" width="95.333333333333314" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eightButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7I-CW-aCl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7V-eW-iCQ">
+                                                        <rect key="frame" x="277" y="0.0" width="95.666666666666686" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nineButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GaQ-Uc-fog"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="qi6-u1-zjP">
+                                                <rect key="frame" x="0.0" y="165.66666666666669" width="372.66666666666669" height="122.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilq-7f-HBd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="fourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qIT-Tg-b2o"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPm-sD-x4a">
+                                                        <rect key="frame" x="138.66666666666669" y="0.0" width="95.333333333333314" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="fiveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BR0-r6-Jca"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuY-ld-G0k">
+                                                        <rect key="frame" x="277" y="0.0" width="95.666666666666686" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sixButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0aU-vd-cyi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="ImD-Gd-UQu">
+                                                <rect key="frame" x="0.0" y="331.33333333333331" width="372.66666666666669" height="122.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eP-sO-GFQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="oneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XdF-EN-gUx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqs-UB-JMl">
+                                                        <rect key="frame" x="138.66666666666669" y="0.0" width="95.333333333333314" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="twoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zbb-Go-IAE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="en1-vv-iU5">
+                                                        <rect key="frame" x="277" y="0.0" width="95.666666666666686" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="threeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QvP-CB-bYB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="gny-GL-4e3">
+                                                <rect key="frame" x="0.0" y="496.99999999999994" width="372.66666666666669" height="122.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGc-zv-Mek">
+                                                        <rect key="frame" x="0.0" y="0.0" width="95.666666666666671" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="decimalPointButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Waj-1Z-gs2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr7-oS-7Zh">
+                                                        <rect key="frame" x="138.66666666666669" y="0.0" width="95.333333333333314" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="ButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="36"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="zeroButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzG-7B-hQU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5L-I9-x7o">
+                                                        <rect key="frame" x="277" y="0.0" width="95.666666666666686" height="122.66666666666667"/>
+                                                        <color key="backgroundColor" name="tipButtonColor"/>
+                                                        <fontDescription key="fontDescription" name="Herculanum" family="Herculanum" pointSize="18"/>
+                                                        <state key="normal" title="total w/tip">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJd-We-Ryu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="glN-7f-dLn" firstAttribute="height" secondItem="nUC-sN-azD" secondAttribute="height" multiplier="0.25" id="BXB-0U-yxN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56455224749999999" green="0.40447664259999999" blue="0.69431179759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A73-a5-K7D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.65" id="3le-lx-e8M"/>
+                            <constraint firstItem="nUC-sN-azD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BjC-rO-5Hd"/>
+                            <constraint firstItem="nUC-sN-azD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.9" id="IIn-0o-Ei6"/>
+                            <constraint firstItem="nUC-sN-azD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="TEX-Qp-cqc"/>
+                            <constraint firstItem="nUC-sN-azD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="trA-0E-t0m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="decimalButton" destination="IGc-zv-Mek" id="WrO-yf-cxW"/>
+                        <outlet property="eightButton" destination="Igt-Of-laq" id="QgS-PY-14y"/>
+                        <outlet property="fiveButton" destination="OPm-sD-x4a" id="y4P-C6-N8y"/>
+                        <outlet property="fourButton" destination="ilq-7f-HBd" id="FFH-al-B8E"/>
+                        <outlet property="nineButton" destination="t7V-eW-iCQ" id="Yid-Lv-OpT"/>
+                        <outlet property="oneButton" destination="5eP-sO-GFQ" id="0XM-bt-rpk"/>
+                        <outlet property="sevenButton" destination="uKJ-vc-KKJ" id="T8j-Nf-8J9"/>
+                        <outlet property="sixButton" destination="QuY-ld-G0k" id="3d1-tN-9Iy"/>
+                        <outlet property="threeButton" destination="en1-vv-iU5" id="oe0-xZ-CxL"/>
+                        <outlet property="tipResultsField" destination="glN-7f-dLn" id="hRx-Oe-6cf"/>
+                        <outlet property="totalWithTipButton" destination="G5L-I9-x7o" id="8pZ-DS-QWg"/>
+                        <outlet property="twoButton" destination="qqs-UB-JMl" id="8No-P8-tjh"/>
+                        <outlet property="zeroButton" destination="dr7-oS-7Zh" id="t88-sP-9Ny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ButtonColor">
+            <color red="0.0" green="0.74117647058823533" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tipButtonColor">
+            <color red="0.63137254901960782" green="0.8666666666666667" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
